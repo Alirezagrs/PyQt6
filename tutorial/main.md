@@ -3,10 +3,10 @@
 
 ### first of all we should define a debut point
 
-    class Mainwindow(QtWidgets.QMainWindow):
+    class Mainwindow(QMainWindow):
         def __init__(self):
-        super().__init__()
-        self.setWindowTitle('title')
+            super().__init__()
+            self.setWindowTitle('title')
 
     app = QApplication([]) # debut piont
     window = MainWindow()
