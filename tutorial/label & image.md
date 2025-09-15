@@ -1,6 +1,9 @@
 # Label
 ### you can use it for text and image
-    l = QLabel()
+    l = QLabel('salam', parent)
+    # or
+    l = QLabel(parent)
+    l.setText("salam")
 
     # font
     l.SetFont(QFont('Arial',size(px), ...))
@@ -30,3 +33,10 @@
 ### now with any size of label the picture is totally shown. If you wanted to show the real size of picture you have into window you can:
     l.setScaledContents(True)
     l.resize(p.width(), p.height())
+
+
+### ***parent rules are for all widgets and .resize() for all widgets.
+
+### .move(x, y) => instead of setGeometry you can use it that does not have weight and height and it is easier to use.
+
+### l.setWordWrap(True) => it is used for text(label) when our text is so long you can use this to break the line, comming down to the new line.
