@@ -19,8 +19,11 @@
 <br>
 
 ### a = QLineEdit(paerent) => widget for input => for password field the value that user enters must not be seen so :
-    a.setEchoMode(QLineEdit.EchoMode.Password)
     # makes * for values not seenable.
+    a.setEchoMode(QLineEdit.EchoMode.Password)
+    
+    # if you wanted to get value of the input which is entered by user
+    value = a.text()
 <br>
 
 ### cb = QCheckBox('text', parent) => a class for check box => signal of that is toggled that is determined if checked or not. and state of toggled will be passed to the func by argument:
@@ -47,3 +50,20 @@
 <br>
 
 ### QMessageBox.StandardButton ==> btn for msg box, the  defaultButton arg is for the default btn when msg box comes up and it shows you which btn was chosen.
+<br>
+
+### kinds of QMessageBox => 
+    QMessageBox.information
+    QMessageBox.warning
+    QMessageBox.critical
+    QMessageBox.question
+    QMessageBox.about
+<br>
+
+### QDialog => this is a pop up window that it is designed for a brief communication with user also we can call them madal. with this you can just enter some info then close it like registration window that u can use this.
+    class RegistrationWindow(QDialog):
+        def __init__(self):
+            self.modal(True)
+            ...
+
+### self.modal(True) => when using this you get disable the QMainWindow and you can not change it no more unless you can

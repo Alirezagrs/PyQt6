@@ -15,3 +15,6 @@
 ### ✅ sys.exit(app.exec()) → Standard and correct, especially for programs that run seriously on the operating system.
 
 ### ⚠️ app.exec() → also works, but does not output the status to the operating system.
+
+### closing the window => you can close any window you have like QDialog or QMainWindow with the instance you have from it in OOP:
+    self.close()
