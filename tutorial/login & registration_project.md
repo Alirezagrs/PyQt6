@@ -15,6 +15,12 @@
 ### self.setFixedSize(360, 220) => you can not change the size of the window anymore
 <br>
 
+### self.setFixedheight(60) => the height is fixed not changable but u can change width
+<br>
+
+### self.setFixedwidth(60) => opposite of above descrptions
+<br>
+
 ### QMainWindow => you can have many of 'em to work with several windows if you want
 <br>
 
